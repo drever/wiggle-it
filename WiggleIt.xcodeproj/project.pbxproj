@@ -1,0 +1,314 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		56BC600315DEF2DD00866575 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56BC600215DEF2DD00866575 /* UIKit.framework */; };
+		56BC600515DEF2DD00866575 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56BC600415DEF2DD00866575 /* Foundation.framework */; };
+		56BC600715DEF2DD00866575 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56BC600615DEF2DD00866575 /* CoreGraphics.framework */; };
+		56BC600915DEF2DD00866575 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56BC600815DEF2DD00866575 /* CoreData.framework */; };
+		56BC600F15DEF2DD00866575 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 56BC600D15DEF2DD00866575 /* InfoPlist.strings */; };
+		56BC601115DEF2DD00866575 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 56BC601015DEF2DD00866575 /* main.m */; };
+		56BC601515DEF2DD00866575 /* GCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 56BC601415DEF2DD00866575 /* GCAppDelegate.m */; };
+		56BC601815DEF2DD00866575 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56BC601615DEF2DD00866575 /* MainStoryboard.storyboard */; };
+		56BC601B15DEF2DD00866575 /* WiggleIt.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 56BC601915DEF2DD00866575 /* WiggleIt.xcdatamodeld */; };
+		56BC601E15DEF2DD00866575 /* GCMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56BC601D15DEF2DD00866575 /* GCMasterViewController.m */; };
+		56BC602115DEF2DD00866575 /* GCDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56BC602015DEF2DD00866575 /* GCDetailViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		56BC5FFE15DEF2DD00866575 /* WiggleIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WiggleIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		56BC600215DEF2DD00866575 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		56BC600415DEF2DD00866575 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		56BC600615DEF2DD00866575 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		56BC600815DEF2DD00866575 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		56BC600C15DEF2DD00866575 /* WiggleIt-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WiggleIt-Info.plist"; sourceTree = "<group>"; };
+		56BC600E15DEF2DD00866575 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		56BC601015DEF2DD00866575 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		56BC601215DEF2DD00866575 /* WiggleIt-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WiggleIt-Prefix.pch"; sourceTree = "<group>"; };
+		56BC601315DEF2DD00866575 /* GCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCAppDelegate.h; sourceTree = "<group>"; };
+		56BC601415DEF2DD00866575 /* GCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCAppDelegate.m; sourceTree = "<group>"; };
+		56BC601715DEF2DD00866575 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		56BC601A15DEF2DD00866575 /* WiggleIt.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WiggleIt.xcdatamodel; sourceTree = "<group>"; };
+		56BC601C15DEF2DD00866575 /* GCMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCMasterViewController.h; sourceTree = "<group>"; };
+		56BC601D15DEF2DD00866575 /* GCMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCMasterViewController.m; sourceTree = "<group>"; };
+		56BC601F15DEF2DD00866575 /* GCDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDetailViewController.h; sourceTree = "<group>"; };
+		56BC602015DEF2DD00866575 /* GCDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDetailViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		56BC5FFB15DEF2DD00866575 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56BC600315DEF2DD00866575 /* UIKit.framework in Frameworks */,
+				56BC600515DEF2DD00866575 /* Foundation.framework in Frameworks */,
+				56BC600715DEF2DD00866575 /* CoreGraphics.framework in Frameworks */,
+				56BC600915DEF2DD00866575 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		56BC5FF315DEF2DD00866575 = {
+			isa = PBXGroup;
+			children = (
+				56BC600A15DEF2DD00866575 /* WiggleIt */,
+				56BC600115DEF2DD00866575 /* Frameworks */,
+				56BC5FFF15DEF2DD00866575 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		56BC5FFF15DEF2DD00866575 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				56BC5FFE15DEF2DD00866575 /* WiggleIt.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		56BC600115DEF2DD00866575 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				56BC600215DEF2DD00866575 /* UIKit.framework */,
+				56BC600415DEF2DD00866575 /* Foundation.framework */,
+				56BC600615DEF2DD00866575 /* CoreGraphics.framework */,
+				56BC600815DEF2DD00866575 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		56BC600A15DEF2DD00866575 /* WiggleIt */ = {
+			isa = PBXGroup;
+			children = (
+				56BC601315DEF2DD00866575 /* GCAppDelegate.h */,
+				56BC601415DEF2DD00866575 /* GCAppDelegate.m */,
+				56BC601615DEF2DD00866575 /* MainStoryboard.storyboard */,
+				56BC601C15DEF2DD00866575 /* GCMasterViewController.h */,
+				56BC601D15DEF2DD00866575 /* GCMasterViewController.m */,
+				56BC601F15DEF2DD00866575 /* GCDetailViewController.h */,
+				56BC602015DEF2DD00866575 /* GCDetailViewController.m */,
+				56BC601915DEF2DD00866575 /* WiggleIt.xcdatamodeld */,
+				56BC600B15DEF2DD00866575 /* Supporting Files */,
+			);
+			path = WiggleIt;
+			sourceTree = "<group>";
+		};
+		56BC600B15DEF2DD00866575 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				56BC600C15DEF2DD00866575 /* WiggleIt-Info.plist */,
+				56BC600D15DEF2DD00866575 /* InfoPlist.strings */,
+				56BC601015DEF2DD00866575 /* main.m */,
+				56BC601215DEF2DD00866575 /* WiggleIt-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		56BC5FFD15DEF2DD00866575 /* WiggleIt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56BC602415DEF2DD00866575 /* Build configuration list for PBXNativeTarget "WiggleIt" */;
+			buildPhases = (
+				56BC5FFA15DEF2DD00866575 /* Sources */,
+				56BC5FFB15DEF2DD00866575 /* Frameworks */,
+				56BC5FFC15DEF2DD00866575 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WiggleIt;
+			productName = WiggleIt;
+			productReference = 56BC5FFE15DEF2DD00866575 /* WiggleIt.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		56BC5FF515DEF2DD00866575 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = GC;
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Johannes Drever";
+			};
+			buildConfigurationList = 56BC5FF815DEF2DD00866575 /* Build configuration list for PBXProject "WiggleIt" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 56BC5FF315DEF2DD00866575;
+			productRefGroup = 56BC5FFF15DEF2DD00866575 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				56BC5FFD15DEF2DD00866575 /* WiggleIt */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		56BC5FFC15DEF2DD00866575 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56BC600F15DEF2DD00866575 /* InfoPlist.strings in Resources */,
+				56BC601815DEF2DD00866575 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		56BC5FFA15DEF2DD00866575 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56BC601115DEF2DD00866575 /* main.m in Sources */,
+				56BC601515DEF2DD00866575 /* GCAppDelegate.m in Sources */,
+				56BC601B15DEF2DD00866575 /* WiggleIt.xcdatamodeld in Sources */,
+				56BC601E15DEF2DD00866575 /* GCMasterViewController.m in Sources */,
+				56BC602115DEF2DD00866575 /* GCDetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		56BC600D15DEF2DD00866575 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				56BC600E15DEF2DD00866575 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		56BC601615DEF2DD00866575 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				56BC601715DEF2DD00866575 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		56BC602215DEF2DD00866575 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		56BC602315DEF2DD00866575 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		56BC602515DEF2DD00866575 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WiggleIt/WiggleIt-Prefix.pch";
+				INFOPLIST_FILE = "WiggleIt/WiggleIt-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		56BC602615DEF2DD00866575 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WiggleIt/WiggleIt-Prefix.pch";
+				INFOPLIST_FILE = "WiggleIt/WiggleIt-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		56BC5FF815DEF2DD00866575 /* Build configuration list for PBXProject "WiggleIt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56BC602215DEF2DD00866575 /* Debug */,
+				56BC602315DEF2DD00866575 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56BC602415DEF2DD00866575 /* Build configuration list for PBXNativeTarget "WiggleIt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56BC602515DEF2DD00866575 /* Debug */,
+				56BC602615DEF2DD00866575 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		56BC601915DEF2DD00866575 /* WiggleIt.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				56BC601A15DEF2DD00866575 /* WiggleIt.xcdatamodel */,
+			);
+			currentVersion = 56BC601A15DEF2DD00866575 /* WiggleIt.xcdatamodel */;
+			path = WiggleIt.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 56BC5FF515DEF2DD00866575 /* Project object */;
+}
