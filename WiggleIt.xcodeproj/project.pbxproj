@@ -18,6 +18,12 @@
 		56BC601B15DEF2DD00866575 /* WiggleIt.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 56BC601915DEF2DD00866575 /* WiggleIt.xcdatamodeld */; };
 		56BC601E15DEF2DD00866575 /* GCMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56BC601D15DEF2DD00866575 /* GCMasterViewController.m */; };
 		56BC602115DEF2DD00866575 /* GCDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56BC602015DEF2DD00866575 /* GCDetailViewController.m */; };
+		56BC602815DEF53A00866575 /* wiggleiticon.png in Resources */ = {isa = PBXBuildFile; fileRef = 56BC602715DEF53A00866575 /* wiggleiticon.png */; };
+		56BC602B15DEF65600866575 /* GCFingerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56BC602A15DEF65600866575 /* GCFingerViewController.m */; };
+		56BC602F15DEF6C400866575 /* GCOscillator.m in Sources */ = {isa = PBXBuildFile; fileRef = 56BC602E15DEF6C400866575 /* GCOscillator.m */; };
+		56BC603215DEF70600866575 /* GCFingerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 56BC603115DEF70500866575 /* GCFingerView.m */; };
+		56BC603815DEFB2C00866575 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56BC603715DEFB2C00866575 /* QuartzCore.framework */; };
+		56E01C3515E18CA00004C839 /* GCParameterSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 56E01C3415E18CA00004C839 /* GCParameterSet.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +44,16 @@
 		56BC601D15DEF2DD00866575 /* GCMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCMasterViewController.m; sourceTree = "<group>"; };
 		56BC601F15DEF2DD00866575 /* GCDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDetailViewController.h; sourceTree = "<group>"; };
 		56BC602015DEF2DD00866575 /* GCDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDetailViewController.m; sourceTree = "<group>"; };
+		56BC602715DEF53A00866575 /* wiggleiticon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wiggleiticon.png; path = ../wiggleiticon.png; sourceTree = "<group>"; };
+		56BC602915DEF65600866575 /* GCFingerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCFingerViewController.h; sourceTree = "<group>"; };
+		56BC602A15DEF65600866575 /* GCFingerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCFingerViewController.m; sourceTree = "<group>"; };
+		56BC602D15DEF6C400866575 /* GCOscillator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCOscillator.h; sourceTree = "<group>"; };
+		56BC602E15DEF6C400866575 /* GCOscillator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCOscillator.m; sourceTree = "<group>"; };
+		56BC603015DEF70500866575 /* GCFingerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCFingerView.h; sourceTree = "<group>"; };
+		56BC603115DEF70500866575 /* GCFingerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCFingerView.m; sourceTree = "<group>"; };
+		56BC603715DEFB2C00866575 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		56E01C3315E18CA00004C839 /* GCParameterSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCParameterSet.h; sourceTree = "<group>"; };
+		56E01C3415E18CA00004C839 /* GCParameterSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCParameterSet.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56BC603815DEFB2C00866575 /* QuartzCore.framework in Frameworks */,
 				56BC600315DEF2DD00866575 /* UIKit.framework in Frameworks */,
 				56BC600515DEF2DD00866575 /* Foundation.framework in Frameworks */,
 				56BC600715DEF2DD00866575 /* CoreGraphics.framework in Frameworks */,
@@ -75,6 +92,7 @@
 		56BC600115DEF2DD00866575 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				56BC603715DEFB2C00866575 /* QuartzCore.framework */,
 				56BC600215DEF2DD00866575 /* UIKit.framework */,
 				56BC600415DEF2DD00866575 /* Foundation.framework */,
 				56BC600615DEF2DD00866575 /* CoreGraphics.framework */,
@@ -86,6 +104,8 @@
 		56BC600A15DEF2DD00866575 /* WiggleIt */ = {
 			isa = PBXGroup;
 			children = (
+				56BC604315DEFDCF00866575 /* FingerView */,
+				56BC602C15DEF67900866575 /* Oscillator */,
 				56BC601315DEF2DD00866575 /* GCAppDelegate.h */,
 				56BC601415DEF2DD00866575 /* GCAppDelegate.m */,
 				56BC601615DEF2DD00866575 /* MainStoryboard.storyboard */,
@@ -102,12 +122,35 @@
 		56BC600B15DEF2DD00866575 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				56BC602715DEF53A00866575 /* wiggleiticon.png */,
 				56BC600C15DEF2DD00866575 /* WiggleIt-Info.plist */,
 				56BC600D15DEF2DD00866575 /* InfoPlist.strings */,
 				56BC601015DEF2DD00866575 /* main.m */,
 				56BC601215DEF2DD00866575 /* WiggleIt-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		56BC602C15DEF67900866575 /* Oscillator */ = {
+			isa = PBXGroup;
+			children = (
+				56BC602D15DEF6C400866575 /* GCOscillator.h */,
+				56BC602E15DEF6C400866575 /* GCOscillator.m */,
+			);
+			name = Oscillator;
+			sourceTree = "<group>";
+		};
+		56BC604315DEFDCF00866575 /* FingerView */ = {
+			isa = PBXGroup;
+			children = (
+				56BC602915DEF65600866575 /* GCFingerViewController.h */,
+				56BC602A15DEF65600866575 /* GCFingerViewController.m */,
+				56BC603015DEF70500866575 /* GCFingerView.h */,
+				56BC603115DEF70500866575 /* GCFingerView.m */,
+				56E01C3315E18CA00004C839 /* GCParameterSet.h */,
+				56E01C3415E18CA00004C839 /* GCParameterSet.m */,
+			);
+			name = FingerView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +207,7 @@
 			files = (
 				56BC600F15DEF2DD00866575 /* InfoPlist.strings in Resources */,
 				56BC601815DEF2DD00866575 /* MainStoryboard.storyboard in Resources */,
+				56BC602815DEF53A00866575 /* wiggleiticon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,6 +223,10 @@
 				56BC601B15DEF2DD00866575 /* WiggleIt.xcdatamodeld in Sources */,
 				56BC601E15DEF2DD00866575 /* GCMasterViewController.m in Sources */,
 				56BC602115DEF2DD00866575 /* GCDetailViewController.m in Sources */,
+				56BC602B15DEF65600866575 /* GCFingerViewController.m in Sources */,
+				56BC602F15DEF6C400866575 /* GCOscillator.m in Sources */,
+				56BC603215DEF70600866575 /* GCFingerView.m in Sources */,
+				56E01C3515E18CA00004C839 /* GCParameterSet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +342,7 @@
 				56BC602615DEF2DD00866575 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

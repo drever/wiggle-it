@@ -19,9 +19,14 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
-    GCMasterViewController *controller = (GCMasterViewController *)navigationController.topViewController;
-    controller.managedObjectContext = self.managedObjectContext;
+    UINavigationController *viewController = (UINavigationController *)self.window.rootViewController;
+//    GCMasterViewController *controller = (GCMasterViewController *)navigationController.topViewController;
+//    controller.managedObjectContext = self.managedObjectContext;
+
+    [self.window addSubview:viewController.view];
+    [self.window makeKeyAndVisible];
+
+    
     return YES;
 }
 							
