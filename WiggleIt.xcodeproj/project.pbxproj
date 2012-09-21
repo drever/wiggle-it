@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5617B833160C3FEA00AABE6D /* hkb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5617B832160C3FEA00AABE6D /* hkb@2x.png */; };
+		5617B839160C405F00AABE6D /* hkb.png in Resources */ = {isa = PBXBuildFile; fileRef = 5617B838160C405F00AABE6D /* hkb.png */; };
+		5622EAA915F92B11003622CF /* GCMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5622EAA815F92B11003622CF /* GCMainViewController.m */; };
 		56BC600315DEF2DD00866575 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56BC600215DEF2DD00866575 /* UIKit.framework */; };
 		56BC600515DEF2DD00866575 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56BC600415DEF2DD00866575 /* Foundation.framework */; };
 		56BC600715DEF2DD00866575 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56BC600615DEF2DD00866575 /* CoreGraphics.framework */; };
@@ -16,8 +19,6 @@
 		56BC601515DEF2DD00866575 /* GCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 56BC601415DEF2DD00866575 /* GCAppDelegate.m */; };
 		56BC601815DEF2DD00866575 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56BC601615DEF2DD00866575 /* MainStoryboard.storyboard */; };
 		56BC601B15DEF2DD00866575 /* WiggleIt.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 56BC601915DEF2DD00866575 /* WiggleIt.xcdatamodeld */; };
-		56BC601E15DEF2DD00866575 /* GCMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56BC601D15DEF2DD00866575 /* GCMasterViewController.m */; };
-		56BC602115DEF2DD00866575 /* GCDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56BC602015DEF2DD00866575 /* GCDetailViewController.m */; };
 		56BC602815DEF53A00866575 /* wiggleiticon.png in Resources */ = {isa = PBXBuildFile; fileRef = 56BC602715DEF53A00866575 /* wiggleiticon.png */; };
 		56BC602B15DEF65600866575 /* GCFingerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56BC602A15DEF65600866575 /* GCFingerViewController.m */; };
 		56BC602F15DEF6C400866575 /* GCOscillator.m in Sources */ = {isa = PBXBuildFile; fileRef = 56BC602E15DEF6C400866575 /* GCOscillator.m */; };
@@ -27,6 +28,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5617B832160C3FEA00AABE6D /* hkb@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hkb@2x.png"; sourceTree = SOURCE_ROOT; };
+		5617B838160C405F00AABE6D /* hkb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hkb.png; sourceTree = "<group>"; };
+		5622EAA715F92B11003622CF /* GCMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCMainViewController.h; sourceTree = "<group>"; };
+		5622EAA815F92B11003622CF /* GCMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCMainViewController.m; sourceTree = "<group>"; };
 		56BC5FFE15DEF2DD00866575 /* WiggleIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WiggleIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56BC600215DEF2DD00866575 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		56BC600415DEF2DD00866575 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -40,10 +45,6 @@
 		56BC601415DEF2DD00866575 /* GCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCAppDelegate.m; sourceTree = "<group>"; };
 		56BC601715DEF2DD00866575 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		56BC601A15DEF2DD00866575 /* WiggleIt.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WiggleIt.xcdatamodel; sourceTree = "<group>"; };
-		56BC601C15DEF2DD00866575 /* GCMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCMasterViewController.h; sourceTree = "<group>"; };
-		56BC601D15DEF2DD00866575 /* GCMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCMasterViewController.m; sourceTree = "<group>"; };
-		56BC601F15DEF2DD00866575 /* GCDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDetailViewController.h; sourceTree = "<group>"; };
-		56BC602015DEF2DD00866575 /* GCDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDetailViewController.m; sourceTree = "<group>"; };
 		56BC602715DEF53A00866575 /* wiggleiticon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wiggleiticon.png; path = ../wiggleiticon.png; sourceTree = "<group>"; };
 		56BC602915DEF65600866575 /* GCFingerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCFingerViewController.h; sourceTree = "<group>"; };
 		56BC602A15DEF65600866575 /* GCFingerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCFingerViewController.m; sourceTree = "<group>"; };
@@ -104,15 +105,13 @@
 		56BC600A15DEF2DD00866575 /* WiggleIt */ = {
 			isa = PBXGroup;
 			children = (
+				5622EAA715F92B11003622CF /* GCMainViewController.h */,
+				5622EAA815F92B11003622CF /* GCMainViewController.m */,
 				56BC604315DEFDCF00866575 /* FingerView */,
 				56BC602C15DEF67900866575 /* Oscillator */,
 				56BC601315DEF2DD00866575 /* GCAppDelegate.h */,
 				56BC601415DEF2DD00866575 /* GCAppDelegate.m */,
 				56BC601615DEF2DD00866575 /* MainStoryboard.storyboard */,
-				56BC601C15DEF2DD00866575 /* GCMasterViewController.h */,
-				56BC601D15DEF2DD00866575 /* GCMasterViewController.m */,
-				56BC601F15DEF2DD00866575 /* GCDetailViewController.h */,
-				56BC602015DEF2DD00866575 /* GCDetailViewController.m */,
 				56BC601915DEF2DD00866575 /* WiggleIt.xcdatamodeld */,
 				56BC600B15DEF2DD00866575 /* Supporting Files */,
 			);
@@ -122,6 +121,8 @@
 		56BC600B15DEF2DD00866575 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5617B838160C405F00AABE6D /* hkb.png */,
+				5617B832160C3FEA00AABE6D /* hkb@2x.png */,
 				56BC602715DEF53A00866575 /* wiggleiticon.png */,
 				56BC600C15DEF2DD00866575 /* WiggleIt-Info.plist */,
 				56BC600D15DEF2DD00866575 /* InfoPlist.strings */,
@@ -208,6 +209,8 @@
 				56BC600F15DEF2DD00866575 /* InfoPlist.strings in Resources */,
 				56BC601815DEF2DD00866575 /* MainStoryboard.storyboard in Resources */,
 				56BC602815DEF53A00866575 /* wiggleiticon.png in Resources */,
+				5617B833160C3FEA00AABE6D /* hkb@2x.png in Resources */,
+				5617B839160C405F00AABE6D /* hkb.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,12 +224,11 @@
 				56BC601115DEF2DD00866575 /* main.m in Sources */,
 				56BC601515DEF2DD00866575 /* GCAppDelegate.m in Sources */,
 				56BC601B15DEF2DD00866575 /* WiggleIt.xcdatamodeld in Sources */,
-				56BC601E15DEF2DD00866575 /* GCMasterViewController.m in Sources */,
-				56BC602115DEF2DD00866575 /* GCDetailViewController.m in Sources */,
 				56BC602B15DEF65600866575 /* GCFingerViewController.m in Sources */,
 				56BC602F15DEF6C400866575 /* GCOscillator.m in Sources */,
 				56BC603215DEF70600866575 /* GCFingerView.m in Sources */,
 				56E01C3515E18CA00004C839 /* GCParameterSet.m in Sources */,
+				5622EAA915F92B11003622CF /* GCMainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

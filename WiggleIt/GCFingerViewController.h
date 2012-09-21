@@ -17,9 +17,19 @@
 @property GCFingerView *fingerView;
 @property (strong, nonatomic) IBOutlet UITapGestureRecognizer *tabGestureRecognizer;
 
-@property  GCParameterSet *parameterSet;
+@property GCParameterSet *parameterSet;
 @property GCOscillator *oscillator;
-
+@property BOOL humanInteraction;
 
 @property NSTimer *timer;
+
+//TODOS
+/*
+1) Show a graph with the relative phase.
+2) Record the time series for later analysis.
+3) Show a pictogram of the potential and a dot inidcating the relative phase of the HKB.
+4) Make the coupling configurable with a drop down menu.
+5) Decide how the parameter ranges can be configured.
+6) Choose one parameter and make it controllable in the FingerView.
+ */
 @end

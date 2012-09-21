@@ -22,7 +22,6 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
     }
     return self;
 }
@@ -31,22 +30,19 @@
 {
     [super viewDidLoad];
     
-    [[UIApplication sharedApplication] setStatusBarHidden:YES];
     [self configureFingerView];
-    
-    self.parameterSet = [[GCParameterSet alloc] init];
-    
+        
     self.timer = [NSTimer scheduledTimerWithTimeInterval:self.parameterSet.frameRate target:self selector:@selector(updateFinger) userInfo:nil repeats:YES];
                   
     self.tabGestureRecognizer.delegate = self;
-	// Do any additional setup after loading the view.
+    
+    [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationFade];
 }
 
 - (void)viewDidUnload
 {
     [self setTabGestureRecognizer:nil];
     [super viewDidUnload];
-    // Release any retained subviews of the main view.
 }
 
 -(void)configureFingerView{
@@ -61,7 +57,7 @@
     self.fingerView.ymax = 1;
     
     self.fingerView.x1 = 0;
-    self.fingerView.y1 = 0;
+    self.fingerView.y1 = -1;
     
     self.fingerView.xdot1 = 0;
     self.fingerView.ydot1 = 0;
@@ -72,9 +68,6 @@
     self.fingerView.x2 = 1;
     self.fingerView.y2 = 1;
     
-//    double omega = sqrt(K/M);
-//    double chi = B / (2.0 * M * omega);
-//    NSLog(@"chi: %f omega: %f", chi, omega);
     [self.view addSubview:self.fingerView];
 }
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -104,7 +97,9 @@
     yd += self.parameterSet.deltaT * ydd;
     y += self.parameterSet.deltaT * yd;
     
-    self.fingerView.x1 = x;
+    if(self.humanInteraction == YES){
+        self.fingerView.x1 = x;
+    }
     self.fingerView.x2 = y;
 
     self.fingerView.xdot1 = xd;
@@ -117,25 +112,22 @@
     
 //    NSLog(@"%f %f", self.fingerView.x1, self.fingerView.xdot1);
 }
-
+- (IBAction)tabRecognized:(id)sender {
+    [[self presentingViewController] dismissModalViewControllerAnimated:YES];
+}
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
-//    NSLog(@"%@", touches);
     UITouch *touch = [[touches allObjects] objectAtIndex:0];
     CGPoint location = [touch locationInView:self.fingerView];
     location = CGPointApplyAffineTransform(location, self.fingerView.it);
     self.fingerView.x1 = location.x;
-//    self.fingerView.y = location.y;
-
 }
 
 -(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event{
-//    NSLog(@"%@", touches);
     UITouch *touch = [[touches allObjects] objectAtIndex:0];
     CGPoint location = [touch locationInView:self.fingerView];
     location = CGPointApplyAffineTransform(location, self.fingerView.it);
     
     self.fingerView.x1 = location.x;
-//    self.fingerView.y = location.y;
 }
 @end
